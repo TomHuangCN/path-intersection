@@ -227,6 +227,14 @@ describe('path-intersection', function() {
       expectedIntersections: []
     });
 
+
+    testOnly('line touching arch', {
+      p0: 'M20,1a10,10,0,0,1,-10,-10z',
+      p1: 'M0,0l16,0',
+      expectedIntersections: [
+        { x: 16, y: 0, segment1: 1, segment2: 1 }
+      ]
+    });
   });
 
 
